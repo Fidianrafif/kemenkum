@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Hukum - Kanwil Kemenkumham DIY</title>
+
+  <!-- Tailwind & Lucide -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-[#002B5B] text-white min-h-screen flex flex-col items-center">
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul Halaman -->
+  <section class="text-center mt-10">
+    <h2 class="text-4xl font-bold uppercase tracking-wide">Tata Usaha dan Umum</h2>
+  </section>
+
+  <!-- Pencarian -->
+  <section class="mt-10 w-10/12 max-w-2xl">
+    <input 
+      id="searchInput"
+      type="text"
+      placeholder="Cari layanan Umum..." 
+      class="w-full rounded-full px-6 py-4 text-black text-2xl font-medium outline-none shadow-md"
+    >
+  </section>
+
+  <!-- Daftar Layanan -->
+  <main class="flex flex-col items-center w-full mt-10 mb-10">
+    <div 
+      id="lawServiceList" 
+      class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-11/12 max-w-5xl"
+    >
+
+      <!-- Kartu 1 -->
+      <a href="usahamenu/magang.html" 
+         class="bg-white text-[#002B5B] rounded-2xl p-8 w-full h-[350px] flex flex-col items-center justify-center 
+                hover:bg-gray-200 transition transform hover:scale-105 shadow-lg text-center">
+        <i data-lucide="briefcase" class="w-20 h-20 mb-6"></i>
+        <p class="font-semibold text-[30px] leading-snug">
+          MAGANG / PENELITIAN / OBSERVASI / SURVEI / STUDI TIRU / KUNJUNGAN
+        </p>
+      </a>
+
+      <!-- Kartu 2 -->
+      <a href="layanan-pengaduan/aduan.html" 
+         class="bg-white text-[#002B5B] rounded-2xl p-8 w-full h-[350px] flex flex-col items-center justify-center 
+                hover:bg-gray-200 transition transform hover:scale-105 shadow-lg text-center">
+        <i data-lucide="megaphone" class="w-20 h-20 mb-6"></i>
+        <p class="font-semibold text-[30px] leading-snug">
+          PENGADUAN MASYARAKAT
+        </p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button 
+      onclick="window.location.href='index.html'"
+      class="bg-white text-[#002B5B] text-[30px] font-bold px-10 py-4 rounded-full shadow-lg 
+             hover:bg-gray-200 hover:scale-105 transition transform duration-200"
+    >
+      ← Kembali ke Beranda
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Inisialisasi ikon Lucide
+    lucide.createIcons();
+
+    // Fitur pencarian layanan
+    const searchInput = document.getElementById('searchInput');
+    const serviceItems = document.querySelectorAll('#lawServiceList a');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      serviceItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

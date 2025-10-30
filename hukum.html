@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Hukum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#002B5B] text-white min-h-screen flex flex-col items-center">
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul Halaman -->
+  <div class="text-center mt-10">
+    <h2 class="text-4xl font-bold uppercase tracking-wide">Layanan Hukum</h2>
+  </div>
+
+  <!-- Pencarian -->
+  <div class="mt-10 w-10/12 max-w-2xl">
+    <input id="hukumSearch" type="text" placeholder="Cari layanan hukum..." 
+           class="w-full rounded-full px-6 py-4 text-black text-2xl font-medium outline-none shadow-md">
+  </div>
+
+  <!-- Grid Menu -->
+  <main class="flex flex-col items-center w-full mt-10 mb-10">
+    <div id="hukumList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-11/12 max-w-5xl">
+
+      <a href="hukummenu/bantuan.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="scale" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">BANTUAN HUKUM</p>
+      </a>
+
+      <a href="hukummenu/raperda.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="file-text" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">HARMONISASI RAPERDA</p>
+      </a>
+
+      <a href="hukummenu/naskah.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="book-open" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">NASKAH AKADEMIK</p>
+      </a>
+
+      <a href="hukummenu/konsultasi.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="messages-square" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">KONSULTASI HUKUM</p>
+      </a>
+
+      <a href="hukummenu/reformasi.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="bar-chart-3" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">INDEKS REFORMASI HUKUM</p>
+      </a>
+
+      <a href="hukummenu/posbankum.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="help-circle" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">POSBANKUM</p>
+      </a>
+
+      <a href="hukummenu/penyuluhan.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="megaphone" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">PENYULUHAN HUKUM</p>
+      </a>
+
+      <a href="hukummenu/pembinaan.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="users" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-[30px]">PEMBENTUKAN & PEMBINAAN DESA/KELURAHAN SADAR HUKUM</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='index.html'"
+            class="bg-white text-[#002B5B] text-[30px] font-bold text-2xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali ke Beranda
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const hukumSearch = document.getElementById('hukumSearch');
+    const hukumItems = document.querySelectorAll('#hukumList a');
+
+    hukumSearch.addEventListener('input', () => {
+      const query = hukumSearch.value.toLowerCase();
+      hukumItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

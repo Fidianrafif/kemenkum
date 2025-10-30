@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bantuan Hukum | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { font-size: 115%; }
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3, p, a, li, button { line-height: 1.4; }
+
+    @media (min-height: 1080px) {
+      h2 { font-size: clamp(2rem, 3vh, 3rem); }
+      h3 { font-size: clamp(1.8rem, 2.8vh, 2.6rem); }
+      p, li { font-size: clamp(1.1rem, 2vh, 1.6rem); }
+      button { font-size: clamp(1rem, 2vh, 1.6rem); }
+    }
+
+    @media (max-width: 640px) {
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 0.95rem; }
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .active-tab { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-[#102d5b] text-white flex flex-col">
+
+  <!-- Background Logo -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/ban1.png" alt="Logo Kemenkumham" class="w-[25vw] max-w-[350px] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul -->
+  <section class="text-center py-[3vh] px-[5vw]">
+    <h2 class="font-bold text-yellow-400 mb-4 text-[50px]">BANTUAN HUKUM GRATIS BAGI MASYARAKAT MISKIN</h2>
+    <p class="text-justify max-w-3xl mx-auto leading-relaxed text-[30px]">
+      Pemerintah melalui Kementerian Hukum dan Hak Asasi Manusia memberikan layanan <b>Bantuan Hukum Gratis</b> bagi masyarakat miskin sebagai wujud keadilan sosial.
+      Layanan ini menjamin hak warga negara untuk mendapatkan akses terhadap keadilan dan kesetaraan di hadapan hukum.
+    </p>
+  </section>
+
+  <!-- Tab Menu -->
+  <div class="flex justify-center mt-6 space-x-3 text-[30px]">
+    <button class="tab-btn bg-yellow-400 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="mekanisme">Mekanisme</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="syarat">Syarat Dokumen</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="ruang">Ruang Lingkup</button>
+  </div>
+
+  <!-- Konten Tabs -->
+  <div class="bg-white/10 rounded-b-xl py-[4vh] px-[6vw] max-w-3xl mx-auto mt-[-1px]">
+
+    <!-- Mekanisme -->
+    <div id="mekanisme" class="tab-content active-tab">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center">MEKANISME</h3>
+      <div class="max-w-3xl mx-auto space-y-5 text-justify">
+        <p>
+          Untuk mendapatkan Bantuan Hukum, masyarakat dapat langsung datang ke <b>Kantor Wilayah Kementerian Hukum Daerah Istimewa Yogyakarta</b> 
+          atau ke <b>Kantor Organisasi Bantuan Hukum (OBH)</b> yang telah terakreditasi dengan persyaratan sebagai berikut:
+        </p>
+        <ol class="list-decimal list-inside space-y-3">
+          <li>Mengajukan <b>permohonan secara lisan atau tertulis</b> yang berisi sekurang-kurangnya identitas pemohon dan uraian singkat mengenai pokok persoalan yang dimohonkan bantuan hukum.</li>
+          <li>Menyerahkan <b>dokumen yang berkenaan dengan perkara</b>.</li>
+          <li>Melampirkan <b>surat keterangan miskin</b> dari lurah, kepala desa, atau pejabat setingkat di tempat tinggal pemohon Bantuan Hukum.</li>
+        </ol>
+        <p>
+          Setelah seluruh persyaratan dilengkapi, pemohon mengajukan permohonan kepada <b>Pemberi Bantuan Hukum (OBH)</b>.  
+          Dalam waktu paling lama 3 (tiga) hari kerja setelah permohonan dinyatakan lengkap, OBH wajib memberikan jawaban menerima atau menolak permohonan.  
+          Jika diterima, bantuan hukum diberikan berdasarkan surat kuasa khusus dari penerima bantuan hukum.  
+          Apabila ditolak, OBH wajib mencantumkan alasan penolakan.
+        </p>
+      </div>
+    </div>
+
+    <!-- Syarat Dokumen -->
+    <div id="syarat" class="tab-content">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center">SYARAT DOKUMEN</h3>
+      <div class="max-w-3xl mx-auto space-y-5 text-justify">
+        <p>
+          Syarat dan Tata Cara <b>Mengajukan Permohonan Bantuan Hukum</b> yaitu:
+        </p>
+        <ol class="list-decimal list-inside space-y-3">
+          <li>Penerima Bantuan Hukum datang langsung ke OBH yang dituju.</li>
+          <li>
+            Penerima Bantuan Hukum membawa:
+            <ul class="list-disc list-inside ml-6 space-y-2">
+              <li>Identitas berupa KTP dan KK (untuk usia anak).</li>
+              <li>Surat Keterangan Tidak Mampu (SKTM) yang dikeluarkan oleh Lurah/Kepala Desa.</li>
+              <li>Bila tidak memiliki SKTM, dapat menggunakan Kartu Miskin seperti KMS, JAMKESMAS, JAMKESDA, dan lain-lain.</li>
+            </ul>
+          </li>
+          <li>Dokumen yang berkenaan dengan perkara.</li>
+          <li>Surat Kuasa, jika permohonan diajukan oleh keluarga atau kuasanya.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ruang Lingkup -->
+    <div id="ruang" class="tab-content">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center">RUANG LINGKUP</h3>
+      <div class="max-w-3xl mx-auto space-y-5 text-justify">
+        <p>Adapun Ruang Lingkup Bantuan Hukum yang dapat diberikan oleh Lembaga Bantuan Hukum meliputi:</p>
+        <ul class="list-disc list-inside ml-6 space-y-2">
+          <li><b>Bantuan Hukum Litigasi</b>: meliputi pendampingan perkara di tingkat penyidikan dan persidangan.</li>
+          <li><b>Bantuan Hukum Non Litigasi</b>: meliputi pendampingan perkara di luar pengadilan, mediasi, negosiasi, penyuluhan hukum, pemberdayaan masyarakat, drafting dokumen hukum, dan investigasi perkara.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tombol Kembali -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='../hukum.html'"
+            class="bg-white text-[#002B5B] text-[30px] font-bold text-2xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <!-- Video Panduan -->
+  <div id="videoBox"
+    class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+          shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]">
+    <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+      <source src="../assets/video/panduan-bantuan.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
+  <script>
+    // Tab Function
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.replace('bg-yellow-400', 'bg-gray-200'));
+        tab.classList.replace('bg-gray-200', 'bg-yellow-400');
+        contents.forEach(c => c.classList.remove('active-tab'));
+        document.getElementById(tab.dataset.tab).classList.add('active-tab');
+      });
+    });
+
+    // Video draggable
+    const videoBox = document.getElementById('videoBox');
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    videoBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = e.clientX - rect.left;
+      offsetY = e.clientY - rect.top;
+      videoBox.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = e.clientX - offsetX;
+      let y = e.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      videoBox.style.cursor = 'move';
+    });
+
+    videoBox.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+      isDragging = true;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = touch.clientX - offsetX;
+      let y = touch.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('touchend', () => { isDragging = false; });
+  </script>
+
+</body>
+</html>

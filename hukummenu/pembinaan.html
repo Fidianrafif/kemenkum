@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konsultasi Hukum | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      font-size: 115%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #102d5b;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, p, li, button {
+      line-height: 1.6;
+    }
+
+    /* Responsif tambahan */
+    @media (max-width: 640px) {
+      h2 { font-size: 1.6rem; }
+      p, li { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body class="flex flex-col">
+
+  <!-- Background Logo -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/pem1.png" alt="Logo Kemenkumham"
+      class="w-[25vw] max-w-[350px] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 py-10 max-w-5xl mx-auto space-y-14">
+
+    <!-- Judul Halaman -->
+    <section class="text-center">
+      <h2 class="text-4xl sm:text-5xl font-bold text-yellow-400 mb-4">
+        PENGERTIAN
+      </h2>
+      <p class="text-lg sm:text-[35px] leading-relaxed text-justify">
+        Desa/Kelurahan Sadar Hukum adalah program berkelanjutan dalam upaya membangun kesadaran hukum masyarakat. 
+        Kolaborasi antar instansi pemerintah maupun dengan masyarakat adalah kunci mencapai keberhasilan. 
+        Tujuannya adalah untuk membangun budaya hukum di masyarakat, meningkatkan kesadaran dan kepatuhan hukum, 
+        serta mewujudkan supremasi hukum di Indonesia, yang dilakukan melalui kolaborasi berbagai instansi pemerintah dan masyarakat.
+      </p>
+    </section>
+
+    <!-- Persyaratan -->
+    <section>
+      <h2 class="text-4xl sm:text-5xl font-bold text-yellow-400 text-center mb-4">
+        PERSYARATAN
+      </h2>
+      <ol class="list-decimal ml-6 sm:ml-10 space-y-3 text-lg sm:text-[35px] leading-relaxed">
+        <li>Surat Keputusan tentang Kelompok Keluarga Sadar Hukum (KADARKUM) di Desa/Kelurahan Binaan</li>
+        <li>Surat usulan Camat tentang Penunjukan Desa/Kelurahan Binaan</li>
+        <li>Surat Keputusan Bupati/Walikota tentang Desa/Kelurahan Binaan Sadar Hukum</li>
+        <li>Kegiatan Penyuluhan Hukum di Desa/Kelurahan Binaan</li>
+        <li>Pemenuhan data dukung sesuai Surat Edaran Kepala Badan Pembinaan Hukum Nasional Nomor: 
+          <br>PHN.HN.04.04-01 Tahun 2022 tentang Pedoman  Pembentukan dan Pembinaan Desa/Kelurahan Sadar Hukum</li>
+      </ol>
+    </section>
+
+    <!-- Panduan -->
+    <section>
+      <h2 class="text-4xl sm:text-5xl font-bold text-yellow-400 text-center mb-4">
+        PROSEDUR
+      </h2>
+      <ol class="list-decimal ml-6 sm:ml-10 space-y-3 text-lg sm:text-[35px] leading-relaxed">
+        <li>Mendisposisikan Surat Keputusan Bupati/Walikota tentang Desa/Kelurahan Binaan Sadar Hukum</li>
+        <li>Melakukan sosialisasi tentang Desa/Kelurahan Sadar Hukum</li>
+        <li>SMelakukan kegiatan pembinaan berupa Penyuluhan Hukum, Temu Sadar Hukum, Ceramah Penyuluhan Hukum Terpadu, Lomba Kadarkum, dan Konsultasi Hukum</li>
+        <li>Melakukan pendampingan pengumpulan data dukung Indeks Desa/Kelurahan Sadar Hukum</li>
+        <li>Melakukan penilaian data dukung Indeks Desa/Kelurahan Sadar Hukum</li>
+        <li>Mengusulkan kepada Gubernur untuk ditetapkan sebagai Desa/Kelurahan Sadar Hukum</li>
+      </ol>
+    </section>
+
+    <!-- Biaya -->
+    <section>
+      <h2 class="text-4xl sm:text-5xl font-bold text-yellow-400 text-center mb-4">
+        BIAYA/TARIF
+      </h2>
+      <p class="text-[lg] sm:text-[35px] leading-relaxed text-justify">
+        Tidak dikenakan biaya (gratis)
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='../hukum.html'"
+      class="bg-white text-[#002B5B] text-[24px] sm:text-[30px] font-bold px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali
+    </button>
+    <p class="mt-4 text-lg sm:text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <!-- Video Panduan -->
+  <div id="videoBox"
+    class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+          shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]">
+    <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+      <source src="../assets/video/panduan-bantuan.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
+  <script>
+    // Script drag video
+    const videoBox = document.getElementById('videoBox');
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    videoBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = e.clientX - rect.left;
+      offsetY = e.clientY - rect.top;
+      videoBox.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = e.clientX - offsetX;
+      let y = e.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      videoBox.style.cursor = 'move';
+    });
+
+    // Mobile support
+    videoBox.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+      isDragging = true;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = touch.clientX - offsetX;
+      let y = touch.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('touchend', () => { isDragging = false; });
+  </script>
+
+</body>
+</html>

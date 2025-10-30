@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naskah Akademik | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { font-size: 115%; }
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3, p, a, li, button { line-height: 1.5; }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .active-tab { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#102d5b] text-white flex flex-col">
+
+  <!-- Background Logo -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/nas1.png" alt="Logo Kemenkumham" class="w-[25vw] max-w-[350px] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul -->
+  <section class="text-center py-[3vh] px-[5vw]">
+    <h2 class="font-bold text-yellow-400 mb-4 text-[50px]">PENYUSUNAN NASKAH AKADEMIK</h2>
+    <p class="text-justify max-w-4xl mx-auto leading-relaxed text-[30px]">
+      Naskah Akademik merupakan hasil penelitian atau kajian hukum terhadap suatu permasalahan tertentu yang digunakan sebagai dasar dalam pembentukan peraturan perundang-undangan.
+    </p>
+  </section>
+
+  <!-- Tab Menu -->
+  <div class="flex justify-center mt-6 space-x-3 text-[30px]">
+    <button class="tab-btn bg-yellow-400 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="deskripsi">Deskripsi</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="landasan">Landasan Pembentukan</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="sistematika">Sistematika Penyusunan</button>
+  </div>
+
+  <!-- Konten Tabs -->
+  <div class="bg-white/10 rounded-b-xl py-[4vh] px-[6vw] max-w-4xl mx-auto mt-[-1px] text-justify">
+
+    <!-- DESKRIPSI -->
+    <div id="deskripsi" class="tab-content active-tab text-[35px]">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center">PENYUSUNAN <span class="bg-blue-900 text-white px-2 rounded">NASKAH AKADEMIK</span></h3>
+      <p class="mb-4">
+        Naskah Akademik adalah naskah hasil penelitian atau pengkajian hukum terhadap suatu masalah tertentu yang digunakan sebagai syarat dalam membentuk Peraturan Perundangan (Undang-Undang dan Peraturan Daerah).
+      </p>
+      <p class="mb-4">
+        Naskah Akademik memuat hasil penelitian mengenai materi muatan yang diusulkan untuk diatur pada undang-undang atau peraturan daerah. Setiap materi muatan harus memiliki kajian ilmiah yang terukur, sistematis, berdasarkan metode tertentu, dan memenuhi kaidah-kaidah penelitian guna mendapat hasil penelitian yang mencerminkan realita fakta di lapangan.
+      </p>
+      <p class="mb-4">
+        Naskah akademik perlu disusun oleh orang yang ahli di bidangnya, Kementerian Hukum dan HAM membina dan memiliki Pejabat Fungsional Perancang Peraturan Perundang-Undangan yang ahli dalam pembentukan produk hukum. Metode penelitian yang digunakan tidak terbatas pada metode yuridis normatif, tapi dapat juga menggunakan metode yuridis empiris atau dikenal juga dengan penelitian sosiolegal.
+      </p>
+      <p>
+        Naskah akademik harus fokus memberikan data dan fakta ilmiah atas realitas masalah dan kebutuhan hukum masyarakat. Dengan kata lain, naskah akademik harus mampu menjawab permasalahan atau kebutuhan hukum yang terjadi di masyarakat. Selanjutnya, perlu diuraikan pula alasan mengapa diperlukan penyusunan undang-undang atau peraturan daerah dalam menyelesaikan masalah tersebut.
+      </p>
+    </div>
+
+    <!-- LANDASAN -->
+    <div id="landasan" class="tab-content text-[35px]">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center"><span class="bg-blue-900 text-white px-2 rounded">LANDASAN</span> PEMBENTUKAN</h3>
+      <p class="mb-4">
+        Naskah akademik selalu disertai dengan landasan pembentukan yang meliputi landasan filosofis, sosiologis, dan yuridis dengan rincian sebagai berikut:
+      </p>
+      <ol class="list-decimal list-inside space-y-3">
+        <li><b>Landasan filosofis</b> memuat mengenai kesadaran hidup berbangsa dan cita hukum nasional berdasarkan Pancasila dan Pembukaan <b>UUD 1945</b>.</li>
+        <li><b>Landasan sosiologis</b> menggambarkan fakta empiris masalah dan kebutuhan hukum masyarakat.</li>
+        <li><b>Landasan yuridis</b> memberikan urgensi hukum mengenai pembaruan atau perbaikan peraturan yang sudah ada agar tetap selaras dan memenuhi tuntutan dinamika kebutuhan hukum masyarakat.</li>
+      </ol>
+    </div>
+
+    <!-- SISTEMATIKA -->
+    <div id="sistematika" class="tab-content text-[35px]">
+      <h3 class="font-bold text-yellow-400 mb-[2vh] text-[40px] text-center"><span class="bg-blue-900 text-white px-2 rounded">SISTEMATIKA PENYUSUNAN</span> NASKAH AKADEMIK</h3>
+      <p class="mb-4">Penyusunan naskah akademik dilakukan sesuai dengan sistematika naskah akademik yang terdiri atas:</p>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Judul</li>
+        <li>Kata Pengantar</li>
+        <li>Daftar Isi</li>
+        <li>Bab I – Pendahuluan</li>
+        <li>Bab II – Kajian Teoretis dan Praktik Empiris</li>
+        <li>Bab III – Analisis dan Evaluasi Peraturan Perundang-Undangan Terkait</li>
+        <li>Bab IV – Landasan Filosofis, Sosiologis, dan Yuridis</li>
+        <li>Bab V – Jangkauan, Arah Pengaturan, dan Ruang Lingkup Materi Muatan Undang-Undang atau Peraturan Daerah</li>
+        <li>Bab VI – Penutup</li>
+        <li>Daftar Pustaka</li>
+        <li>Lampiran: Rancangan Peraturan Perundang-Undangan</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <!-- Tombol Kembali -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='../hukum.html'"
+            class="bg-white text-[#002B5B] text-[30px] font-bold text-2xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <!-- Video Panduan -->
+  <div id="videoBox"
+    class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+          shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]">
+    <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+      <source src="../assets/video/panduan-bantuan.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
+  <script>
+    // Tab Function
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.replace('bg-yellow-400', 'bg-gray-200'));
+        tab.classList.replace('bg-gray-200', 'bg-yellow-400');
+        contents.forEach(c => c.classList.remove('active-tab'));
+        document.getElementById(tab.dataset.tab).classList.add('active-tab');
+      });
+    });
+
+    // Video draggable
+    const videoBox = document.getElementById('videoBox');
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    videoBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = e.clientX - rect.left;
+      offsetY = e.clientY - rect.top;
+      videoBox.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = e.clientX - offsetX;
+      let y = e.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      videoBox.style.cursor = 'move';
+    });
+
+    videoBox.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+      isDragging = true;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = touch.clientX - offsetX;
+      let y = touch.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('touchend', () => { isDragging = false; });
+  </script>
+
+</body>
+</html>

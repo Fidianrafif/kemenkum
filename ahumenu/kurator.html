@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurator dan Pengurus | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    html {
+      font-size: 130%;
+    }
+
+    html, body {
+      background-color: #0b2b5b;
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.5;
+    }
+
+    .prosedur p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Bullet biar sejajar rapi */
+    .bullet {
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      html { font-size: 115%; }
+      h2 { font-size: 1.8rem; }
+      p, li { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+    <!-- Logo Transparan sebagai Background -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/kur1.png" 
+         alt="Logo Yayasan"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+<!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- KONTEN -->
+  <main class="flex flex-col items-center px-8 py-10">
+
+    <!-- Judul -->
+    <div class="text-center mb-8">
+      <h2 class="text-[50px] font-bold text-yellow-400 mb-2">KURATOR DAN PENGURUS</h2>
+      <p class="max-w-2xl text-white/90 text-[30px] leading-relaxed">
+        Kurator adalah Balai Harta Peninggalan atau orang perseorangan yang diangkat oleh Pengadilan 
+        untuk mengurus dan membereskan harta Debitor Pailit di bawah pengawasan Hakim Pengawas sesuai 
+        dengan Undang-Undang.
+      </p>
+    </div>
+
+    <!-- Prosedur -->
+    <section class="max-w-2xl text-left text-[30px] leading-relaxed">
+      <h3 class="text-[50px] font-bold text-yellow-400 mb-6 text-center">PROSEDUR PENDAFTARAN</h3>
+
+      <ul class="space-y-4">
+        <li class="flex items-start">
+          <span class="bg-white text-[#0b2b5b] font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+          <p>Registrasi akun di <a href="https://kurator.ahu.go.id" target="_blank" class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+            KURATOR.AHU.GO.ID
+          </a></p>
+        </li>
+        <li class="flex items-start">
+          <span class="bg-white text-[#0b2b5b] font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+          <p>Login Akun</p>
+        </li>
+        <li class="flex items-start">
+          <span class="bg-white text-[#0b2b5b] font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+          <p>Mengisi formulir Pendaftaran</p>
+        </li>
+        <li class="flex items-start">
+          <span class="bg-white text-[#0b2b5b] font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+          <p>Mengunggah dokumen persyaratan:</p>
+        </li>
+      </ul>
+
+      <ul class="mt-4 space-y-2 pl-10 list-disc">
+        <li>Surat Permohonan Pendaftaran Kurator & Pengurus yang diajukan kepada Direktur Jenderal Administrasi Hukum Umum</li>
+        <li>Kartu Tanda Penduduk</li>
+        <li>Nomor Pokok Wajib Pajak</li>
+        <li>Sertifikat tanda lulus ujian Kurator dan Pengurus yang dikeluarkan oleh Komite Bersama</li>
+        <li>Surat rekomendasi dari organisasi profesi kurator dan pengurus</li>
+        <li>Surat pernyataan tidak rangkap jabatan</li>
+        <li>Surat pernyataan bersedia membuka rekening untuk setiap perkara kepailitan atas nama debitur pailit</li>
+        <li>Surat pernyataan tidak sedang dalam keadaan pailit</li>
+        <li>Surat pernyataan tidak pernah menjadi anggota direksi dan komisaris yang dinyatakan bersalah menyebabkan perseroan pailit</li>
+        <li>Surat pernyataan tidak pernah dihukum karena tindak pidana dengan hukuman 5 tahun atau lebih dengan putusan pengadilan yang berkekuatan hukum tetap</li>
+        <li>Surat pernyataan bersedia menjalankan tugas pengurusan dan pemberesan harta pailit dengan tanggung jawab penuh terhadap kesalahan atau kelalaian yang menyebabkan kerugian harta pailit</li>
+      </ul>
+    </section>
+
+     <!-- Tombol ke Halaman Selanjutnya -->
+    <div class="w-full flex flex-col md:flex-row justify-center gap-6 mt-14">
+      <button onclick="window.location.href='../ahu.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        ← Kembali
+      </button>
+
+      <button onclick="window.location.href='kurator2.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        Selanjutnya →
+      </button>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yayasan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+  font-size: 130%; /* ubah ke 120% atau 130% kalau mau lebih besar */
+}
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Penyesuaian ukuran font proporsional */
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.4;
+    }
+
+    @media (min-height: 1080px) {
+      h2 { font-size: clamp(2rem, 3vh, 3rem); }
+      h3 { font-size: clamp(1.8rem, 2.8vh, 2.6rem); }
+      p, li { font-size: clamp(1.1rem, 2vh, 1.6rem); }
+      button { font-size: clamp(1rem, 2vh, 1.6rem); }
+    }
+
+    @media (max-width: 640px) {
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+
+<body class="relative bg-[#0b2b5b] text-white font-sans leading-relaxed">
+
+  <!-- Logo Transparan sebagai Background -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/yys2.png" 
+         alt="Logo Yayasan"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+   
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+  
+  <section class="text-center py-8 px-6">
+    <h2 class="text-3xl text-[50px] font-bold text-yellow-400 mb-4">YAYASAN</h2>
+    <p class="text-justify max-w-2xl mx-auto leading-relaxed">
+      Yayasan adalah sebuah badan hukum yang bergerak dalam bidang sosial, kemanusiaan dan keagamaan.
+      Yayasan memiliki kekayaan tersendiri dari berbagai macam sumber. Yayasan ini sifatnya tidak memiliki anggota.
+      Menilik dari tujuannya, yayasan tidak mencari profit atau keuntungan. Yayasan selanjutnya memiliki kewenangan
+      untuk mendirikan sebuah atau beberapa buah badan usaha sesuai dengan visi dan misi yang dimiliki oleh yayasan.
+    </p>
+  </section>
+
+  <!-- Prosedur Pendaftaran -->
+  <section class="px-8 py-8 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-yellow-400 text-center mb-6 text-[50px]">
+      PROSEDUR PENDAFTARAN
+    </h2>
+
+    <div class="space-y-6 text-base pl-12">
+      <div>
+        <p class="font-semibold text-[40px]">1. Pesan Nama</p>
+        <ul class="ml-6 space-y-2">
+          <li><span class="text-white-400 font-bold text-[30px]">A.Pesan Nama Oleh Umum</span>
+            <ul class="ml-6 space-y-1">
+              <li><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">1</span>Pemesanan Nomor Voucher</li>
+              <li><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">2</span>Pembayaran Nomor Voucher</li>
+              <li><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">3</span>Pengisian Form Pesan Nama Yayasan</li>
+            </ul>
+          </li>
+          <li><span class="text-white-400 font-bold text-[30px]">B.Pesan Nama Oleh Notaris</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[40px]">2. Pendirian</p>
+        <ul class="ml-6 space-y-1 grid grid-cols-2 gap-x-4 gap-y-1 text-[18px]">
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">a</span>Data Yayasan</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">h</span>Pengurus Yayasan</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">b</span>Akta Notaris</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">i</span>Maksud dan Tujuan</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">c</span>Kedudukan Yayasan</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">j</span>Pemilik Manfaat</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">d</span>Domisili Yayasan</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">k</span>Notaris Pengganti</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">e</span>Pendirian Yayasan</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">l</span>Persyaratan Dokumen</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">f</span>Data Wasiat</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">m</span>Pendirian Terlambat Penyesuaian</p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">g</span>Pendiri Yayasan</p>
+          <p><span class="bg-blue-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">n</span>Upload Akta</p>
+          <p></p>
+          <p><span class="bg-red-500 text-white font-bold rounded-full w-6 h-6 inline-flex items-center justify-center mr-2 text-sm">o</span>Download SK Pengesahan Pendirian</p>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biaya Pendaftaran -->
+  <section class="px-8 py-10 max-w-2xl mx-auto">
+    <h2 class="text-[50px]  font-bold text-yellow-400 mb-4 text-center">BIAYA PENDAFTARAN</h2>
+
+    <table class="w-full border border-yellow-400 text-[30px] text-[#0b2b5b] font-semibold">
+      <tbody>
+        <tr class="border border-yellow-400">
+          <td class="bg-yellow-400 p-3">PNBP Persetujuan Pemakaian Nama</td>
+          <td class="bg-white p-3 text-center">Rp 100.000</td>
+        </tr>
+        <tr class="border border-yellow-400">
+          <td class="bg-yellow-400 p-3">
+            Kekayaan Yang Dipisahkan Mulai Dari Rp 10.000.000 s/d Rp 25.000.000
+          </td>
+          <td class="bg-white p-3 text-center">Rp 200.000</td>
+        </tr>
+        <tr class="border border-yellow-400">
+          <td class="bg-yellow-400 p-3">
+            Kekayaan Yang Dipisahkan Lebih Dari Rp 25.000.000 s/d Rp 1.000.000.000
+          </td>
+          <td class="bg-white p-3 text-center">Rp 300.000</td>
+        </tr>
+        <tr class="border border-yellow-400">
+          <td class="bg-yellow-400 p-3">
+            Kekayaan Yang Dipisahkan Lebih Dari Rp 1.000.000.000
+          </td>
+          <td class="bg-white p-3 text-center">Rp 500.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+   <div class="w-full py-8 flex flex-col items-center space-y-3">
+  <!-- Teks dan Link ke Layanan AHU -->
+  <p class="text-center text-gray-200 text-[30px]">
+    Untuk informasi lebih lanjut, kunjungi 
+    <a href="https://ahu.go.id" target="_blank" 
+       class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+       layanan AHU Online
+    </a>
+  </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full py-[3vh] flex justify-center">
+    <button onclick="window.location.href='../ahu.html'"
+            class="bg-white text-[#002B5B] font-bold px-[4vw] py-[1.5vh] rounded-full shadow-md hover:bg-gray-200 transition text-[clamp(1rem,2vh,1.6rem)]">
+      ← Kembali
+    </button>
+  </footer>
+
+  <!-- VIDEO FLOATING -->
+<div id="videoBox"
+  class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+         shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]"
+  style="left:auto; top:100px;">
+  
+  <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+    <source src="../assets/video/panduan-apostille.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutar video.
+  </video>
+</div>
+
+<script>
+  const videoBox = document.getElementById('videoBox');
+  let isDragging = false;
+  let offsetX = 0, offsetY = 0;
+
+  // === DRAG MENGGUNAKAN MOUSE ===
+  videoBox.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+    videoBox.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+
+    // biar gak keluar dari layar
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    videoBox.style.cursor = 'move';
+  });
+
+  // === DRAG MENGGUNAKAN SENTUHAN (HP / TABLET) ===
+  videoBox.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
+    isDragging = true;
+  });
+
+  document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const touch = e.touches[0];
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = touch.clientX - offsetX;
+    let y = touch.clientY - offsetY;
+
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+</script>
+
+</body>
+</html>

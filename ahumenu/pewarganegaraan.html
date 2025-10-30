@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pewarganegaraan | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      font-size: 130%;
+    }
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.5;
+    }
+
+    .prosedur p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Bullet biar sejajar rapi */
+    .bullet {
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      html { font-size: 115%; }
+      h2 { font-size: 1.8rem; }
+      p, li { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#0b2b5b] text-white font-sans">
+
+  <!-- Logo Transparan -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/pewar1.png" 
+         alt="Logo Background"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="px-8 py-10">
+
+    <!-- Judul & Deskripsi -->
+    <section class="text-center mb-10">
+      <h2 class="text-[50px] font-bold text-yellow-400 mb-4">PEWARGANEGARAAN</h2>
+      <p class="max-w-3xl mx-auto text-justify text-white/90 leading-relaxed text-[40px]">
+        Pewarganegaraan sering disebut dengan <span class="italic">Naturalisasi</span>, yaitu suatu proses hukum
+        yang dilakukan oleh seseorang untuk memperoleh atau memiliki kewarganegaraan suatu negara, atau alih status
+        dari WNA (Warga Negara Asing) menjadi WNI (Warga Negara Indonesia).
+      </p>
+    </section>
+
+    <!-- Prosedur -->
+    <section class="max-w-3xl mx-auto prosedur">
+      <h2 class="text-[45px] font-bold text-yellow-400 mb-8 text-center">PROSEDUR PERMOHONAN</h2>
+      <ul class="space-y-5 text-[40px] leading-relaxed">
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat permohonan yang ditandatangani oleh Pemohon sesuai dengan AD atau ART Partai Politik.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Fotokopi kutipan akta perkawinan/buku nikah, kutipan akta perceraian/surat talak, atau kutipan akta kematian istri/suami pemohon bagi yang belum berusia 18 tahun, disahkan pejabat berwenang dan diterjemahkan ke Bahasa Indonesia oleh penerjemah resmi tersumpah.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat keterangan dari kantor imigrasi setempat bahwa Pemohon telah tinggal di Indonesia paling singkat 5 tahun berturut-turut atau 10 tahun tidak berturut-turut.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Fotokopi Kartu Izin Tinggal Tetap yang disahkan oleh pejabat berwenang.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat keterangan sehat jasmani dan rohani dari Rumah Sakit Pemerintah (medical check up lengkap dan surat bebas narkoba).</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat Keterangan Catatan Kepolisian (SKCK) yang wilayah kerjanya meliputi tempat tinggal pemohon.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat keterangan dari perwakilan negara asal pemohon yang menyatakan bahwa dengan memperoleh Kewarganegaraan Republik Indonesia, tidak menjadi berkewarganegaraan ganda.</p>
+        </li>
+        <li class="flex items-start">
+          <div class="w-4 h-4 bg-white rounded-full bullet mr-4 mt-2"></div>
+          <p>Surat keterangan dari camat setempat yang menyatakan bahwa pemohon memiliki penghasilan tetap.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tombol Navigasi -->
+    <div class="w-full flex flex-col md:flex-row justify-center gap-6 mt-14">
+      <button onclick="window.location.href='../ahu.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        ← Kembali
+      </button>
+
+      <button onclick="window.location.href='pewarganegaraan2.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        Selanjutnya →
+      </button>
+    </div>
+
+  </main>
+</body>
+</html>

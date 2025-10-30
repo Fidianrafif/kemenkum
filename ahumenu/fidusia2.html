@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidusia - Halaman 2 | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>    
+    html {
+      font-size: 130%;
+    }
+
+    html, body {
+      background-color: #0b2b5b;
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.5;
+    }
+
+    .prosedur p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Bullet biar sejajar rapi */
+    .bullet {
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      html { font-size: 115%; }
+      h2 { font-size: 1.8rem; }
+      p, li { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body class="text-white">
+
+    <!-- Logo Transparan sebagai Background -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/fid1.png" 
+         alt="Logo Yayasan"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- KONTEN -->
+  <main class="flex flex-col items-center px-8 py-10 space-y-10">
+
+    <!-- BIAYA PENDAFTARAN -->
+    <section class="max-w-3xl w-full text-[30px]">
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 rounded-t-lg">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp100.000.000 sampai dengan Rp250.000.000</div>
+        <div class="p-4 bg-white text-center rounded-tr-lg">Rp 200.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp250.000.000 sampai dengan Rp500.000.000</div>
+        <div class="p-4 bg-white text-center">Rp 450.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp500.000.000 sampai dengan Rp1.000.000.000</div>
+        <div class="p-4 bg-white text-center">Rp 850.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp1.000.000.000 sampai dengan Rp10.000.000.000</div>
+        <div class="p-4 bg-white text-center">Rp 1.800.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp10.000.000.000 sampai dengan Rp500.000.000.000</div>
+        <div class="p-4 bg-white text-center">Rp 3.500.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Nilai Penjaminan di atas Rp500.000.000.000 sampai dengan Rp1.000.000.000.000</div>
+        <div class="p-4 bg-white text-center">Rp 6.800.000 / Sertifikat</div>
+      </div>
+
+      <div class="bg-yellow-400 text-[#0b2b5b] font-bold grid grid-cols-2 rounded-b-lg mt-1">
+        <div class="p-4 border-r border-[#0b2b5b]">Penjaminan di atas Rp1.000.000.000.000</div>
+        <div class="p-4 bg-white text-center rounded-br-lg">Rp 13.300.000 / Sertifikat</div>
+      </div>
+    </section>
+
+     <div class="w-full py-8 flex flex-col items-center space-y-3">
+      <p class="text-center text-gray-200 text-[clamp(1rem,1.9vh,1.4rem)]">
+      Untuk informasi lebih lanjut, kunjungi 
+      <a href="https://ahu.go.id" target="_blank" 
+         class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+         layanan AHU Online
+      </a>
+    </p>
+    </div>
+
+ <!-- Tombol Navigasi -->
+<div class="w-full flex flex-col md:flex-row justify-center gap-6 mt-10">
+      <button onclick="window.location.href='fidusia.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        ← Kembali
+      </button>
+
+      <button onclick="window.location.href='../ahu.html'"
+        class="bg-white text-[#0b2b5b] font-bold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition text-[30px]">
+        Selesai
+      </button>
+    </div>
+
+    <!-- VIDEO FLOATING -->
+<div id="videoBox"
+  class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+         shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]"
+  style="left:auto; top:100px;">
+  
+  <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+    <source src="../assets/video/panduan-apostille.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutar video.
+  </video>
+</div>
+
+<script>
+  const videoBox = document.getElementById('videoBox');
+  let isDragging = false;
+  let offsetX = 0, offsetY = 0;
+
+  // === DRAG MENGGUNAKAN MOUSE ===
+  videoBox.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+    videoBox.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+
+    // biar gak keluar dari layar
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    videoBox.style.cursor = 'move';
+  });
+
+  // === DRAG MENGGUNAKAN SENTUHAN (HP / TABLET) ===
+  videoBox.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
+    isDragging = true;
+  });
+
+  document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const touch = e.touches[0];
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = touch.clientX - offsetX;
+    let y = touch.clientY - offsetY;
+
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+</script>
+
+  </main>
+
+</body>
+</html>

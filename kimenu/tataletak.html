@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desain Tata Letak Sirkuit Terpadu | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+  font-size: 115%; /* ubah ke 120% atau 130% kalau mau lebih besar */}
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Penyesuaian ukuran font proporsional */
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.4;
+    }
+
+    @media (min-height: 1080px) {
+      h2 { font-size: clamp(2rem, 3vh, 3rem); }
+      h3 { font-size: clamp(1.8rem, 2.8vh, 2.6rem); }
+      p, li { font-size: clamp(1.1rem, 2vh, 1.6rem); }
+      button { font-size: clamp(1rem, 2vh, 1.6rem); }
+    }
+
+    @media (max-width: 640px) {
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#0b2b5b] text-white font-sans">
+
+  <!-- Logo Transparan sebagai Background -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/tata1.png" 
+         alt="Logo Background"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- HEADER -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- JUDUL -->
+  <section class="max-w-2xl mx-auto text-center mt-8 px-6">
+    <h2 class="text-yellow-400 text-[50px] font-bold mb-3 leading-snug">
+      DESAIN TATA LETAK SIRKUIT TERPADU
+    </h2>
+    <p class="text-[30px] text-justify leading-relaxed">
+      Desain rancangan peletakan elemen-elemen elektronik dalam suatu sirkuit terpadu. 
+      Sekurang-kurangnya satu dari elemen-elemen elektronik itu merupakan elemen aktif 
+      yang keseluruhannya saling berkaitan di dalam sebuah bahan semi-konduktor untuk 
+      menghasilkan fungsi elektronik.
+    </p>
+  </section>
+
+  <!-- PROSEDUR PENDAFTARAN -->
+  <section class="max-w-2xl mx-auto mt-10 px-6">
+    <h3 class="text-yellow-400 font-bold text-[50px] mb-6 text-center">PROSEDUR PENDAFTARAN</h3>
+
+    <div class="space-y-6">
+      <!-- STEP 1 -->
+      <div class="flex items-start gap-3">
+        <div class="bg-white text-[30px] text-[#0b2b5b] font-bold rounded-full w-9 h-9 flex items-center justify-center flex-shrink-0">1</div>
+        <p class="text-[30px] font-semibold">Registrasi akun di <a href="https://dtlst.dgip.go.id/" target="_blank"
+          class="text-yellow-400 underline hover:text-yellow-300">
+          DTLST.DGIP.GO.ID
+        </a></p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="flex items-start gap-3">
+        <div class="bg-white text-[30px] text-[#0b2b5b] font-bold rounded-full w-9 h-9 flex items-center justify-center flex-shrink-0">2</div>
+        <p class="text-[30px] font-semibold">Login, lalu buat permohonan baru</p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="flex items-start gap-3">
+        <div class="bg-white text-[30px] text-[#0b2b5b] font-bold rounded-full w-9 h-9 flex items-center justify-center flex-shrink-0">3</div>
+        <div>
+          <p class="text-[30px] font-semibold mb-3">Isi formulir dan unggah data dukung</p>
+          <ul class="space-y-2 pl-2 list-none">
+            <li class="flex items-start">
+              <span class="bg-red-500 rounded-full w-10 h-10 flex items-center justify-center text-[30px] font-bold mr-3 flex-shrink-0">a</span>
+              <span>File desain tata letak sirkuit terpadu (dalam bentuk GDS, GS II, CIF, bmp, jpg, jpeg, gif, tif, tiff, atau pdf)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-[30px] font-bold mr-3 flex-shrink-0">b</span>
+              <span>Gambar dan Uraian DTLST</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-red-500 rounded-full w-10 h-10 flex items-center justify-center text-[30px] font-bold mr-3 flex-shrink-0">c</span>
+              <span>Surat pernyataan kepemilikan DTLST</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-[30px] font-bold mr-3 flex-shrink-0">d</span>
+              <span>Surat pengalihan hak DTLST (jika pemohon dan pendesain bukan orang yang sama)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-red-500 rounded-full w-10 h-10 flex items-center justify-center text-[30px] font-bold mr-3 flex-shrink-0">e</span>
+              <span>Surat keterangan mengenai tanggal eksploitasi pertama secara komersial (jika sudah komersial)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="flex items-start gap-3">
+        <div class="bg-white text-[30px] text-[#0b2b5b] font-bold rounded-full w-9 h-9 flex items-center justify-center flex-shrink-0">4</div>
+        <p class="text-[30px] font-semibold">Selesai dan aplikasi akan menampilkan kode pembayaran</p>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="flex items-start gap-3">
+        <div class="bg-white text-[30px] text-[#0b2b5b] font-bold rounded-full w-9 h-9 flex items-center justify-center flex-shrink-0">5</div>
+        <p class="text-[30px] font-semibold">Lakukan pembayaran sesuai dengan kode pembayaran di hari yang sama, paling lambat 23.59 WIB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIAYA PENDAFTARAN -->
+  <section class="px-8 py-10 max-w-2xl mx-auto">
+    <h2 class="text-[50px] font-bold text-yellow-400 mb-4 text-center">BIAYA PENDAFTARAN</h2>
+
+    <div class="border border-yellow-400 text-[#0b2b5b] font-bold text-center text-[30px]">
+      <div class="flex">
+        <div class="bg-yellow-400 p-3 w-1/2">Usaha Mikro dan Usaha Kecil</div>
+        <div class="bg-white p-3 w-1/2">Rp 400.000 / permohonan</div>
+      </div>
+      <div class="flex border-t border-yellow-400">
+        <div class="bg-yellow-400 p-3 w-1/2">UMUM</div>
+        <div class="bg-white p-3 w-1/2">Rp 700.000 / permohonan</div>
+      </div>
+    </div>
+  </section>
+
+    <div class="w-full py-[4vh] flex flex-col items-center space-y-3">
+    <p class="text-center text-gray-200 text-[30px]">
+      Untuk informasi lebih lanjut, kunjungi 
+      <a href="https://dgip.go.id" target="_blank" 
+         class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+         layanan KI Online
+      </a>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-full py-[3vh] flex justify-center">
+    <button onclick="window.location.href='../ki.html'"
+            class="bg-white text-[#002B5B] font-bold px-[4vw] py-[1.5vh] rounded-full shadow-md hover:bg-gray-200 transition text-[clamp(1rem,2vh,1.6rem)]">
+      ← Kembali
+    </button>
+  </footer>
+
+  <!-- VIDEO FLOATING -->
+<div id="videoBox"
+  class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+         shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]"
+  style="left:auto; top:100px;">
+  
+  <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+    <source src="../assets/video/panduan-merek.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutar video.
+  </video>
+</div>
+
+<script>
+  const videoBox = document.getElementById('videoBox');
+  let isDragging = false;
+  let offsetX = 0, offsetY = 0;
+
+  // === MOUSE DRAG ===
+  videoBox.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+    videoBox.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+
+    // Batas agar video tidak keluar dari layar
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    videoBox.style.cursor = 'move';
+  });
+
+  // === TOUCH DRAG (untuk layar sentuh) ===
+  videoBox.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
+    isDragging = true;
+  });
+
+  document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const touch = e.touches[0];
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = touch.clientX - offsetX;
+    let y = touch.clientY - offsetY;
+
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+</script>
+
+</body>
+</html>

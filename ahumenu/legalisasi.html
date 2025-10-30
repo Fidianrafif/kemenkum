@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legalisasi | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+  font-size: 130%; /* ubah ke 120% atau 130% kalau mau lebih besar */
+}
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Penyesuaian ukuran font proporsional */
+    h1, h2, h3, p, a, li, button {
+      line-height: 1.4;
+    }
+
+    @media (min-height: 1080px) {
+      h2 { font-size: clamp(2rem, 3vh, 3rem); }
+      h3 { font-size: clamp(1.8rem, 2.8vh, 2.6rem); }
+      p, li { font-size: clamp(1.1rem, 2vh, 1.6rem); }
+      button { font-size: clamp(1rem, 2vh, 1.6rem); }
+    }
+
+    @media (max-width: 640px) {
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p, li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body class="bg-[#102d5b] text-white font-sans">
+
+  <!-- Logo Transparan sebagai Background -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/lgl1.png" 
+         alt="Logo Yayasan"
+         class="w-[30%] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul -->
+  <section class="text-center py-8 px-6">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-4">Legalisasi</h2>
+    <p class="text-justify max-w-2xl mx-auto leading-relaxed">
+      Layanan pengesahan tanda tangan Pejabat, pengesahan cap, dan/atau segel resmi dalam dokumen yang diterbitkan di Indonesia berbentuk sertifikat apostille yang dikeluarkan oleh Kementerian Hukum RI untuk digunakan di luar negeri pada negara yang tergabung dalam konvensi apostille.
+    </p>
+  </section>
+
+  <!-- Prosedur Pendaftaran -->
+  <section class="py-8 px-6">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-6 text-center">PROSEDUR PENDAFTARAN</h3>
+
+  <!-- Tambah pl-20 agar konten agak ke tengah -->
+    <div class="max-w-3xl mx-auto pl-20 space-y-5 text-lg">
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">1</span>
+        <p>
+          Registrasi akun di 
+          <!-- Jadikan bisa diklik -->
+          <a href="https://apostille.ahu.go.id" target="_blank" class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+            APOSTILLE.AHU.GO.ID
+          </a>
+        </p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">2</span>
+        <p>Kirim ulang aktivasi email</p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">3</span>
+        <p>Login akun</p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">4</span>
+        <p>Membuat permohonan dan unggah data dukung:</p>
+      </div>
+
+      <ul class="list-disc list-inside ml-10 space-y-2 text-base">
+        <li>KTP (Kartu Tanda Penduduk)</li>
+        <li>Surat Kuasa bermaterai apabila diwakilkan</li>
+        <li>Dokumen asli sesuai yang akan di Apostillekan</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- Prosedur Cetak Sertifikat -->
+  <section class="py-8 px-6">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-6 text-center">PROSEDUR CETAK SERTIFIKAT APOSTILLE</h3>
+
+    <!-- Tambah pl-20 agar konten agak ke tengah -->
+    <div class="max-w-3xl mx-auto pl-40 space-y-5 text-lg">
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">1</span>
+
+        <p>KTP (Kartu Tanda Penduduk)</p>
+      </div>
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">2</span>
+        <p>Surat Kuasa jika diwakilkan</p>
+      </div>
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">3</span>
+        <p>Dokumen yang akan diapostillekan</p>
+      </div>
+      <div class="flex items-start space-x-3">
+        <span class="bg-white text-[#0a2342] font-bold rounded-full w-8 h-8 flex items-center justify-center">4</span>
+        <p>Bukti pembayaran PNBP</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biaya -->
+  <section class="px-6 py-8">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-4 text-center">BIAYA PENDAFTARAN</h2>
+    <div class="max-w-3xl mx-auto border border-yellow-400">
+      <div class="flex flex-col md:flex-row text-center text-[30px]">
+        <div class="bg-yellow-400 text-[#0b2b5b] font-bold flex-1 p-4">Penerimaan Negara Bukan Pajak</div>
+        <div class="bg-white text-[#0b2b5b] font-bold flex-1 p-4">Rp 50.000</div>
+      </div>
+    </div>
+  </section>
+
+   <div class="w-full py-8 flex flex-col items-center space-y-3">
+  <!-- Teks dan Link ke Layanan AHU -->
+  <p class="text-center text-gray-200 text-[30px]">
+    Untuk informasi lebih lanjut, kunjungi 
+    <a href="https://ahu.go.id" target="_blank" 
+       class="text-yellow-400 font-semibold underline hover:text-yellow-300">
+       layanan AHU Online
+    </a>
+  </p>
+  </div>
+
+  <footer class="w-full py-[3vh] flex justify-center">
+    <button onclick="window.location.href='../ahu.html'"
+            class="bg-white text-[#002B5B] font-bold px-[4vw] py-[1.5vh] rounded-full shadow-md hover:bg-gray-200 transition text-[clamp(1rem,2vh,1.6rem)]">
+      ← Kembali
+    </button>
+  </footer>
+
+  <!-- VIDEO FLOATING -->
+<div id="videoBox"
+  class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+         shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]"
+  style="left:auto; top:100px;">
+  
+  <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+    <source src="../assets/video/panduan-apostille.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutar video.
+  </video>
+</div>
+
+<script>
+  const videoBox = document.getElementById('videoBox');
+  let isDragging = false;
+  let offsetX = 0, offsetY = 0;
+
+  // === DRAG MENGGUNAKAN MOUSE ===
+  videoBox.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+    videoBox.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+
+    // biar gak keluar dari layar
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    videoBox.style.cursor = 'move';
+  });
+
+  // === DRAG MENGGUNAKAN SENTUHAN (HP / TABLET) ===
+  videoBox.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    const rect = videoBox.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
+    isDragging = true;
+  });
+
+  document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const touch = e.touches[0];
+    const maxX = window.innerWidth - videoBox.offsetWidth;
+    const maxY = window.innerHeight - videoBox.offsetHeight;
+
+    let x = touch.clientX - offsetX;
+    let y = touch.clientY - offsetY;
+
+    x = Math.max(0, Math.min(x, maxX));
+    y = Math.max(0, Math.min(y, maxY));
+
+    videoBox.style.left = x + 'px';
+    videoBox.style.top = y + 'px';
+    videoBox.style.right = 'auto';
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pos Bantuan Hukum (Posbankum) | Kanwil Kemenkumham DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { 
+        font-size: 115%; 
+        scroll-behavior: smooth; 
+    }
+    body { 
+        font-family: 'Segoe UI', sans-serif; 
+        background-color: #102d5b; 
+        color: white; 
+        overflow-x: hidden; 
+    }
+
+    .tab-content { 
+        display: none; 
+    }
+    .active-tab { 
+        display: block; 
+    }
+
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    }
+
+    h2, h3 { 
+        color: #FFD700; 
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- Background Logo -->
+  <div class="fixed inset-0 flex justify-center items-center -z-10">
+    <img src="../assets/img/pos1.png" alt="Logo Kemenkumham"
+      class="w-[25vw] max-w-[350px] opacity-15 object-contain select-none pointer-events-none" />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="../assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul -->
+  <section class="text-center py-[3vh] px-[5vw]">
+    <h2 class="font-bold mb-4 text-[50px]">POS BANTUAN HUKUM DESA/KELURAHAN (POSBANKUM)</h2>
+    <p class="text-justify max-w-4xl mx-auto leading-relaxed text-[30px]">
+      Pos Bantuan Hukum Desa/Kelurahan atau <b>Posbankum</b> adalah bentuk layanan hukum yang dibentuk di tingkat desa atau kelurahan
+      untuk memberikan akses keadilan kepada masyarakat, terutama kelompok rentan dan masyarakat kurang mampu secara ekonomi dan hukum.
+    </p>
+  </section>
+
+  <!-- Tabs -->
+  <div class="flex justify-center mt-6 flex-wrap gap-3 text-[30px]">
+    <button class="tab-btn bg-yellow-400 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="informasi">Informasi</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="infografis">Infografis</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="prosedur">Prosedur</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="sebaran">Sebaran</button>
+    <button class="tab-btn bg-gray-200 text-[#0b2b5b] font-bold px-6 py-2 rounded-t-lg shadow-md" data-tab="biaya">Biaya</button>
+  </div>
+
+  <!-- Konten -->
+  <div class="bg-white/10 rounded-b-xl py-[4vh] px-[6vw] max-w-5xl mx-auto mt-[-1px]">
+
+    <!-- INFORMASI -->
+    <div id="informasi" class="tab-content active-tab text-[35px]">
+      <h3 class="font-bold text-center text-[40px] mb-6">PENGERTIAN POSBANKUM</h3>
+      <p class="text-justify mb-6">
+        Pos Bantuan Hukum Desa/Kelurahan (Posbankum) merupakan layanan hukum di tingkat desa atau kelurahan yang dibentuk
+        sebagai bagian dari upaya negara memberikan akses keadilan bagi masyarakat miskin, rentan, atau kurang mampu.
+      </p>
+      <h3 class="font-bold text-center text-[40px] mb-4">FUNGSI POSBANKUM</h3>
+      <ol class="list-decimal list-inside space-y-4 text-justify">
+        <li><b>Layanan Informasi Hukum</b> – menyediakan tempat konsultasi hukum, perpustakaan hukum, dan pemahaman hak warga.</li>
+        <li><b>Layanan Bantuan Hukum dan Advokasi</b> – membantu masyarakat dalam perkara hukum serta menjadi koordinasi dengan aparat penegak hukum.</li>
+        <li><b>Layanan Penyelesaian Konflik atau Mediasi</b> – membantu penyelesaian sengketa non-litigasi secara damai.</li>
+        <li><b>Layanan Rujukan Advokat</b> – menghubungkan masyarakat dengan PBH atau organisasi advokat untuk perkara litigasi.</li>
+      </ol>
+    </div>
+
+    <!-- INFOGRAFIS -->
+    <div id="infografis" class="tab-content text-[35px]">
+      <h3 class="font-bold text-center text-[40px] mb-6">INFOGRAFIS POSBANKUM</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <img src="../assets/img/1.jpg" alt="Infografis Posbankum 1" class="rounded-lg shadow-lg">
+        <img src="../assets/img/2.jpg" alt="Infografis Posbankum 2" class="rounded-lg shadow-lg">
+        <img src="../assets/img/3.jpg" alt="Infografis Posbankum 3" class="rounded-lg shadow-lg">
+        <img src="../assets/img/4.jpg" alt="Infografis Posbankum 4" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+
+    <!-- PROSEDUR -->
+    <div id="prosedur" class="tab-content text-[35px]">
+      <h3 class="font-bold text-center text-[40px] mb-6">PROSEDUR LAYANAN POSBANKUM</h3>
+      <ol class="list-decimal list-inside space-y-5 text-justify">
+        <li><b>Layanan Bantuan Hukum Nonlitigasi</b> – Dilakukan oleh Paralegal Posbankum sebagai langkah awal penyelesaian perkara. Jika mengarah pada mediasi, diteruskan ke Balai Mediasi Desa/Kelurahan.</li>
+        <li><b>Layanan Penyelesaian Sengketa Secara Mediasi</b> – Diselenggarakan oleh Majelis Perdamaian Desa dengan melibatkan Kepala Desa/Lurah, Babinsa, tokoh agama, dan tokoh masyarakat.</li>
+        <li><b>Layanan Rujukan Advokat</b> – Jika perkara membutuhkan proses pengadilan, masyarakat dirujuk ke PBH atau organisasi advokat terakreditasi.</li>
+      </ol>
+    </div>
+
+    <!-- SEBARAN -->
+    <div id="sebaran" class="tab-content text-[35px]">
+      <h3 class="font-bold text-center text-[40px] mb-6">PETA SEBARAN POSBANKUM DIY</h3>
+      <img src="../assets/img/5.jpg" alt="Peta Sebaran Posbankum DIY" class="rounded-lg shadow-lg mx-auto">
+      <p class="text-center mt-4 text-[35px]">Sebaran Posbankum di Kabupaten Sleman, Bantul, Kulon Progo, Gunungkidul, dan Kota Yogyakarta.</p>
+    </div>
+
+    <!-- BIAYA -->
+    <div id="biaya" class="tab-content text-[35px]">
+      <h3 class="font-bold text-center text-[40px] mb-6">PEMBIAYAAN POSBANKUM</h3>
+      <p class="text-justify mb-6">
+        Seluruh biaya pembentukan dan pelaksanaan Posbankum Desa/Kelurahan dapat dibebankan pada:
+      </p>
+      <ul class="list-disc list-inside space-y-3 ml-6">
+        <li>Anggaran Pendapatan dan Belanja Negara (APBN);</li>
+        <li>Anggaran Pendapatan dan Belanja Daerah (APBD);</li>
+        <li>Alokasi Dana Desa (ADD);</li>
+        <li>Sumber lain yang sah dan tidak mengikat sesuai ketentuan perundangan.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='../hukum.html'"
+            class="bg-white text-[#002B5B] text-[30px] font-bold px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum dan HAM DIY</p>
+  </footer>
+
+  <!-- Video Panduan -->
+  <div id="videoBox"
+    class="fixed top-[100px] right-[50px] w-[360px] h-[200px] rounded-xl overflow-hidden 
+           shadow-lg border-4 border-yellow-400 bg-[#001f4d] cursor-move p-2 z-[9999]">
+    <video id="videoPanduan" controls class="w-full h-full object-cover rounded-md pointer-events-none">
+      <source src="../assets/video/posbankum.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
+  <script>
+    // === Script Ganti Tab ===
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // reset semua tombol tab ke abu-abu
+      tabs.forEach(t => {
+        t.classList.remove('bg-yellow-400');
+        t.classList.add('bg-gray-200');
+      });
+      // aktifkan tab yang diklik
+      tab.classList.remove('bg-gray-200');
+      tab.classList.add('bg-yellow-400');
+
+      // sembunyikan semua konten
+      contents.forEach(c => c.classList.remove('active-tab'));
+      // tampilkan konten sesuai tab
+      const target = tab.getAttribute('data-tab');
+      document.getElementById(target).classList.add('active-tab');
+    });
+  });
+
+    // Script drag video
+    const videoBox = document.getElementById('videoBox');
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    videoBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = e.clientX - rect.left;
+      offsetY = e.clientY - rect.top;
+      videoBox.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = e.clientX - offsetX;
+      let y = e.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      videoBox.style.cursor = 'move';
+    });
+
+    // Mobile support
+    videoBox.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const rect = videoBox.getBoundingClientRect();
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+      isDragging = true;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const maxX = window.innerWidth - videoBox.offsetWidth;
+      const maxY = window.innerHeight - videoBox.offsetHeight;
+      let x = touch.clientX - offsetX;
+      let y = touch.clientY - offsetY;
+      x = Math.max(0, Math.min(x, maxX));
+      y = Math.max(0, Math.min(y, maxY));
+      videoBox.style.left = x + 'px';
+      videoBox.style.top = y + 'px';
+      videoBox.style.right = 'auto';
+    });
+
+    document.addEventListener('touchend', () => { isDragging = false; });
+  </script>
+
+</body>
+</html>

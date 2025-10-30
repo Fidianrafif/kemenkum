@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kekayaan Intelektual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#002B5B] text-white min-h-screen flex flex-col items-center">
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Judul Halaman -->
+  <div class="text-center mt-10">
+    <h2 class="text-4xl font-bold uppercase tracking-wide">Kekayaan Intelektual</h2>
+  </div>
+
+  <!-- Pencarian -->
+  <div class="mt-10 w-10/12 max-w-2xl">
+    <input id="ahuSearch" type="text" placeholder="Cari layanan KI..." 
+           class="w-full rounded-full px-6 py-4 text-black text-2xl font-medium outline-none shadow-md">
+  </div>
+
+  <!-- Grid Menu -->
+  <main class="flex flex-col items-center w-full mt-10 mb-10">
+    <div id="ahuList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-11/12 max-w-5xl">
+
+      <a href="kimenu/merek.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="tag" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">MEREK</p>
+      </a>
+
+      <a href="kimenu/industri.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="cpu" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">DESAIN INDUSTRI</p>
+      </a>
+
+      <a href="kimenu/cipta.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="pen-tool" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">HAK CIPTA</p>
+      </a>
+
+      <a href="kimenu/geografis.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="map-pin" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">INDIKASI GEOGRAFIS</p>
+      </a>
+
+      <a href="kimenu/paten.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="lightbulb" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">PATEN</p>
+      </a>
+
+      <a href="kimenu/dagang.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="lock" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">RAHASIA DAGANG</p>
+      </a>
+
+      <a href="kimenu/tataletak.html" class="bg-white text-[#002B5B] rounded-2xl p-8 flex flex-col items-center hover:bg-gray-200 transition transform hover:scale-105 shadow-lg">
+        <i data-lucide="circuit-board" class="w-20 h-20 mb-4"></i>
+        <p class="text-center font-semibold text-2xl text-[30px]">DESAIN TATA LETAK SIRKUIT TERPADU</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-10 flex flex-col items-center">
+    <button onclick="window.location.href='index.html'"
+            class="bg-white text-[#002B5B] text-[30px] font-bold text-2xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-200 hover:scale-105 transition transform duration-200">
+      ← Kembali ke Beranda
+    </button>
+    <p class="mt-4 text-xl text-gray-300">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const kiSearch = document.getElementById('kiSearch');
+    const kiItems = document.querySelectorAll('#kiList a');
+
+    kiSearch.addEventListener('input', () => {
+      const query = kiSearch.value.toLowerCase();
+      kiItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

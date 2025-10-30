@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan AHU & KI - Kanwil Kemenkum DIY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-[#002B5B] text-white min-h-screen w-screen flex flex-col">
+
+  <!-- Background -->
+  <div class="fixed bottom-0 left-0 right-0 flex justify-center -z-10">
+    <img 
+      src="assets/img/hias1.png" 
+      alt="Background"
+      class="w-full opacity-100 object-contain select-none pointer-events-none" 
+    />
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white flex items-center justify-center py-6 shadow-md">
+    <img src="assets/img/logo-kemenkum.png" alt="Logo Kemenkumham" class="h-20 mr-5">
+    <div class="text-center leading-tight">
+      <h1 class="text-black font-bold text-4xl">KANWIL KEMENTERIAN HUKUM RI</h1>
+      <p class="text-black text-3xl">DAERAH ISTIMEWA YOGYAKARTA</p>
+    </div>
+  </header>
+
+  <!-- Konten Scrollable -->
+  <main class="flex-grow overflow-y-auto">
+    <!-- Judul -->
+    <div class="mt-8 text-center px-4 text-[50px] sm:text-[60px]">
+      <h2 class="text-shadow-lg font-bold uppercase">Pelayanan Hukum Disabilitas</h2>
+      <h2 class="text-shadow-lg font-bold uppercase">Kanwil Kementrian Hukum</h2>
+    </div>
+
+    <!-- Grid Tombol -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 px-6 py-12 place-items-center">
+      <!-- Tombol AHU -->
+      <button onclick="navigateTo('ahu.html')" 
+        class="service-btn flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#003B7B]/20 rounded-2xl p-6">
+        <div class="icon-circle bg-white rounded-full p-4 shadow-md">
+          <img src="assets/img/ahu1.png" class="h-24 w-24" alt="AHU Icon">
+        </div>
+        <p class="btn-text text-shadow-lg text-center mt-4 text-[35px] sm:text-[45px] font-semibold leading-tight">
+          ADMINISTRASI<br>HUKUM UMUM
+        </p>
+      </button>
+
+      <!-- Tombol KI -->
+      <button onclick="navigateTo('ki.html')" 
+        class="service-btn flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#003B7B]/20 rounded-2xl p-6">
+        <div class="icon-circle bg-white rounded-full p-4 shadow-md">
+          <img src="assets/img/ki1.png" class="h-24 w-24" alt="KI Icon">
+        </div>
+        <p class="btn-text text-shadow-lg text-center mt-4 text-[35px] sm:text-[45px] font-semibold leading-tight">
+          KEKAYAAN<br>INTELEKTUAL
+        </p>
+      </button>
+
+      <!-- Tombol HUKUM -->
+      <button onclick="navigateTo('hukum.html')" 
+        class="service-btn flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#003B7B]/20 rounded-2xl p-6">
+        <div class="icon-circle bg-white rounded-full p-4 shadow-md">
+          <img src="assets/img/hkm2.png" class="h-24 w-24" alt="HUKUM Icon">
+        </div>
+        <p class="btn-text text-shadow-lg text-center mt-4 text-[35px] sm:text-[45px] font-semibold leading-tight">
+          LAYANAN<br>HUKUM
+        </p>
+      </button>
+
+      <!-- Tombol PENGADUAN -->
+      <button onclick="navigateTo('usaha.html')" 
+        class="service-btn flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#003B7B]/20 rounded-2xl p-6">
+        <div class="icon-circle bg-white rounded-full p-4 shadow-md">
+          <img src="assets/img/usaha1.png" class="h-24 w-24" alt="ADU Icon">
+        </div>
+        <p class="btn-text text-shadow-lg text-center mt-4 text-[35px] sm:text-[45px] font-semibold leading-tight">
+          TATA USAHA<br>DAN UMUM
+        </p>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-[#002B5B] py-5 shadow-md text-center text-[30px] sm:text-[35px]">
+    <p class="mt-1 font-semibold">&copy; 2025 Kementerian Hukum DIY</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
