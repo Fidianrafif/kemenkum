@@ -122,17 +122,17 @@ $content = htmlspecialchars(file_get_contents($page));
                 <textarea name="content"><?php echo $content; ?></textarea>
 
                 <div class="flex justify-between mt-6">
-                    <a href="dashboard.php" class="bg-gray-300 text-[#0b2b5b] px-4 py-2 rounded-md font-bold hover:bg-gray-200">⬅️ Kembali</a>
+                    <a href="dashboard.php" class="bg-gray-300 text-[#0b2b5b] px-4 py-2 rounded-md font-bold hover:bg-gray-200">Kembali</a>
                     
                     <div class="flex gap-3">
                         <button type="button" onclick="window.open('<?php echo $page; ?>', '_blank')" 
                             class="bg-blue-500 text-white px-6 py-2 rounded-md font-bold hover:bg-blue-400 transition">
-                            👁️ Preview
+                            Preview
                         </button>
 
                         <button type="submit" 
                             class="bg-yellow-400 text-[#0b2b5b] px-6 py-2 rounded-md font-bold hover:bg-yellow-300 transition">
-                            💾 Simpan Perubahan
+                            Simpan Perubahan
                         </button>
                     </div>
                 </div>

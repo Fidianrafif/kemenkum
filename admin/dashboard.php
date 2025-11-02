@@ -47,11 +47,11 @@ $ki_files = getHtmlFiles("kimenu");
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           <a href="pengaduan.php" 
              class="bg-yellow-400 text-center font-bold py-2 rounded-md hover:bg-yellow-300 transition">
-            📋 Lihat Data Pengaduan
+            Lihat Data Pengaduan
           </a>
           <a href="edit_page.php?page=index.html" 
              class="bg-yellow-400 text-center font-bold py-2 rounded-md hover:bg-yellow-300 transition">
-            🏠 Edit Beranda
+            Edit Beranda
           </a>
         </div>
       </div>
